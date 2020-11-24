@@ -171,76 +171,77 @@ h2{
          <table align="center" border="2" height ="500px" width="70%">
          <tr bgcolor="orange"><th colspan="2"><h3 align="center" >Emergency contact details & address</h3>
          </tr>
-        <tr bgcolor="white" class ="phoneno1">
+        <tr bgcolor="white" >
         <th  align="left">PhoneNo</th>
-        <th><input type="number" name=phoneno1 maxlength="10"placeholder="your number" title="use only numbers" required ></th></tr><br><br>
+        <th><form:input type="number" name=phoneno1 maxlength="10"placeholder="your number" title="use only numbers"  /></th></tr><br><br>
         
-        <tr bgcolor="#99ff66"   class ="phoneno2"><th  align="left">Alternate PhoneNo</th>
-        <th><input type="number" name=phoneno2 maxlength="10"  title="use only numbers and don't be same as phonenno"  required></th></tr><br><br>
+        <tr bgcolor="#99ff66"   ><th  align="left">Alternate PhoneNo</th>
+        <th><form:input type="number" name=phoneno2 maxlength="10"  title="use only numbers and don't be same as phonenno"  /></th></tr><br><br>
         
        
        
        
-		<tr  bgcolor="white"   class = "required"> <th  align="left"><b> Address</b> </th>  
-		<th><input type="text" name="line1" placeholder="door no. , street name,area name" size="30" minlength="9" maxlength="30" required /><br><br>
+		<tr  bgcolor="white"   > <th  align="left"><b> Address</b> </th>  
+		<th><form:input type="text"  path="" name="address" placeholder="door no. , street name,area name" size="30" minlength="9" maxlength="30"  /><br><br>
 
 
 		<br></th></tr>
-		<div  class ="form-group">
-		<tr bgcolor="#99ff66"  class = "required" ><th  align="left"><b>City</b></th>
-               <th><input type = "text"  placeholder="city"  required></th></tr><br><br>
-               </div>
+	
+		<tr bgcolor="#99ff66" ><th  align="left"><b>City</b></th>
+               <th><form:input type ="text"  placeholder="city" path=" " /></th></tr><br><br>
+          
+          
                
               
-   		<tr bgcolor="white"  class = "required"><th  align="left"> <b> State </b> </th>
+   		<tr bgcolor="white"  ><th  align="left"> <b> State </b> </th>
              <th> 
-<select name="state" id="state" class="form-control" >
- <option>--States--</option>
-<option value="Andhra Pradesh">Andhra Pradesh</option>
-<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-<option value="Arunachal Pradesh">Arunachal Pradesh</option>
-<option value="Assam">Assam</option>
-<option value="Bihar">Bihar</option>
-<option value="Chandigarh">Chandigarh</option>
-<option value="Chhattisgarh">Chhattisgarh</option>
-<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-<option value="Daman and Diu">Daman and Diu</option>
-<option value="Delhi">Delhi</option>
-<option value="Lakshadweep">Lakshadweep</option>
-<option value="Puducherry">Puducherry</option>
-<option value="Goa">Goa</option>
-<option value="Gujarat">Gujarat</option>
-<option value="Haryana">Haryana</option>
-<option value="Himachal Pradesh">Himachal Pradesh</option>
-<option value="Jammu and Kashmir">Jammu and Kashmir</option>
-<option value="Jharkhand">Jharkhand</option>
-<option value="Karnataka">Karnataka</option>
-<option value="Kerala">Kerala</option>
-<option value="Madhya Pradesh">Madhya Pradesh</option>
-<option value="Maharashtra">Maharashtra</option>
-<option value="Manipur">Manipur</option>
-<option value="Meghalaya">Meghalaya</option>
-<option value="Mizoram">Mizoram</option>
-<option value="Nagaland">Nagaland</option>
-<option value="Odisha">Odisha</option>
-<option value="Punjab">Punjab</option>
-<option value="Rajasthan">Rajasthan</option>
-<option value="Sikkim">Sikkim</option>
-<option value="Tamil Nadu">Tamil Nadu</option>
-<option value="Telangana">Telangana</option>
-<option value="Tripura">Tripura</option>
-<option value="Uttar Pradesh">Uttar Pradesh</option>
-<option value="Uttarakhand">Uttarakhand</option>
-<option value="West Bengal">West Bengal</option>
-</select>
+<form:select path="state" >
+ <form:option>--States--</form:option>
+<form:option value="Andhra Pradesh">Andhra Pradesh</form:option>form:option>
+<form:option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</form:option>form:option>
+<form:option value="Arunachal Pradesh">Arunachal Pradesh</form:option>form:option>
+<form:option value="Assam">Assam</form:option>
+<form:option value="Bihar">Bihar</form:option>form:option>
+<form:option value="Chandigarh">Chandigarh</form:option>
+<form:option value="Chhattisgarh">Chhattisgarh</form:option>
+<form:option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</form:option>
+<form:option value="Daman and Diu">Daman and Diu</form:option>
+<form:option value="Delhi">Delhi</form:option>
+<form:option value="Lakshadweep">Lakshadweep</form:option>
+<form:option value="Puducherry">Puducherry</form:option>
+<form:option value="Goa">Goa</form:option>
+<form:option value="Gujarat">Gujarat</form:option>
+<form:option value="Haryana">Haryana</form:option>
+<form:option value="Himachal Pradesh">Himachal Pradesh</form:option>
+<form:option value="Jammu and Kashmir">Jammu and Kashmir</form:option>
+<form:option value="Jharkhand">Jharkhand</form:option>
+<form:option value="Karnataka">Karnataka</form:option>
+<form:option value="Kerala">Kerala</form:option>
+<form:option value="Madhya Pradesh">Madhya Pradesh</form:option>
+<form:option value="Maharashtra">Maharashtra</form:option>
+<form:option value="Manipur">Manipur</form:option>
+<form:option value="Meghalaya">Meghalaya</form:option>
+<form:option value="Mizoram">Mizoram</form:option>
+<form:option value="Nagaland">Nagaland</form:option>
+<form:option value="Odisha">Odisha</form:option>
+<form:option value="Punjab">Punjab</form:option>
+<form:option value="Rajasthan">Rajasthan</form:option>
+<form:option value="Sikkim">Sikkim</form:option>
+<form:option value="Tamil Nadu">Tamil Nadu</form:option>
+<form:option value="Telangana">Telangana</form:option>
+<form:option value="Tripura">Tripura</form:option>
+<form:option value="Uttar Pradesh">Uttar Pradesh</form:option>
+<form:option value="Uttarakhand">Uttarakhand</form:option>
+<form:option value="West Bengal">West Bengal</form:option>
+</form:select>
              </th></tr><br><br>
              </div> 
   
   		<div  class ="form-group">
-  		<tr bgcolor="#99ff66"  class = "required">  
+  		<tr bgcolor="#99ff66" >  
    		<th  align="left"><b>Pincode</b></th>
    		
-		<th><input type="number" name="pincode" maxlength="6"/ title="use only numbers" required></th></tr> <br><br>
+		<th><input: type="number" name="pincode" maxlength="6"/ title="use only numbers" required></th></tr> <br><br>
 		</div>
 
     <trbgcolor="white" >
